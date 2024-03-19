@@ -2,32 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/**
+    admin login
+*/
+
+.admin-login-row {
+    border: 1px solid inherit;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.login-box figure {
+    width: 150px;
+    height: 150px;
+    border: 1px solid inherit;
+    border-radius: 112px;
+}
+.login-box figure img {
+    width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.login-box form input {
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #f5f5f5;
+}
+.login-box form button {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #f5eee5;
+    color: black;
+    height: 40px;
+    width: 320px;
+}
+
+/** Update Member Details */
+.update-member-info {
+    border: 1px solid inherit;
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.update-member-info form .member-info {
+    border: 1px solid inherit;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: start;
+    align-content: start;
+    gap: 30px;
 }
